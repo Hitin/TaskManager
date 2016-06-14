@@ -6,11 +6,5 @@ require 'factory_girl'
 FactoryGirl.reload
 
 class ActiveSupport::TestCase
-  fixtures :all
-
-
-
-
-
   include FactoryGirl::Syntax::Methods
 end
