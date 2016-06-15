@@ -46,5 +46,5 @@ end
 
 private
   def tasks_params
-  	params.require(:tasks).permit(:user, :email)
+  	params.require(:tasks).permit(:title, :text)
   end
