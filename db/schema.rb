@@ -14,8 +14,8 @@
 ActiveRecord::Schema.define(version: 20160606210217) do
 
   create_table "tasks", force: :cascade do |t|
-    t.string   "user"
-    t.string   "email"
+    t.string   "title"
+    t.string   "text"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

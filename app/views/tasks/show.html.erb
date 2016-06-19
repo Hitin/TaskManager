@@ -1,11 +1,11 @@
 <p>
   <strong>User:</strong>
-  <%= @tasks.user %>
+  <%= @tasks.title %>
 </p>
  
 <p>
   <strong>Email:</strong>
-  <%= @tasks.email %>
+  <%= @tasks.text %>
 </p>
 <%= link_to 'Edit', edit_task_path(@tasks) %>
 <%= link_to 'Back', tasks_path %>
