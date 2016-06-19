@@ -1,7 +1,7 @@
 <h1>New Tasks</h1>
 
 
-<%= form_for :tasks,url: tasks_path do |f| %>
+<%= form_for @task, url: tasks_path do |f| %>
 
   <p>
     <%= f.label :title %><br>

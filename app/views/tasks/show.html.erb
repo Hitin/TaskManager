@@ -1,11 +1,11 @@
 <p>
   <strong>Title:</strong>
-  <%= @tasks.title %>
+  <%= @task.title %>
 </p>
  
 <p>
   <strong>Text:</strong>
-  <%= @tasks.text %>
+  <%= @task.text %>
 </p>
-<%= link_to 'Edit', edit_task_path(@tasks) %>
+<%= link_to 'Edit', edit_task_path(@task) %>
 <%= link_to 'Back', tasks_path %>

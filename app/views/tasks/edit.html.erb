@@ -1,6 +1,6 @@
 <h1>Editing task</h1>
  
-<%= form_for :tasks, url: task_path(@tasks), method: :patch do |f| %>
+<%= form_for @task, url: task_path(@task), method: :patch do |f| %>
 
   <p>
     <%= f.label :title %><br>

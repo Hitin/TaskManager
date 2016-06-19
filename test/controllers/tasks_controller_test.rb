@@ -13,7 +13,8 @@ class TasksControllerTest < ActionController::TestCase
 
   def test_show
 	  get :show, id: @task.id
-	 assert_response :success
+    p response
+	  assert_response :success
   end
 
   def test_new
@@ -23,8 +24,8 @@ class TasksControllerTest < ActionController::TestCase
 
   def test_create
 	  assert_difference('Task.count') do 
-	  post :create, tasks: @attr
-	end
+	    post :create, tasks: @attr
+	  end
     assert_redirected_to task_path(assigns(:tasks))
   end
 
@@ -35,7 +36,7 @@ class TasksControllerTest < ActionController::TestCase
 
   def test_destroy 
 	  assert_difference('Task.count', -1) do
-	  delete :destroy, id: @task.id
+	    delete :destroy, id: @task.id
 	  end
     assert_redirected_to tasks_path
   end
