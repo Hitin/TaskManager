@@ -29,6 +29,8 @@ gem 'haml-rails'
 
 gem 'pg'
 
+gem 'nokogiri'
+
 gem 'therubyracer'
 
 gem 'less-rails' 
