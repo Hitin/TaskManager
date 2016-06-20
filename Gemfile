@@ -29,7 +29,7 @@ gem 'haml-rails'
 
 gem 'pg'
 
-gem 'nokogiri'
+#gem 'nokogiri'
 
 gem 'therubyracer'
 
