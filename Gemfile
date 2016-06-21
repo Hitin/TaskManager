@@ -29,7 +29,9 @@ gem 'haml-rails'
 
 gem 'pg'
 
-#gem 'nokogiri'
+gem 'simplecov', :require => false, :group => :test
+
+gem 'coveralls', require: false
 
 gem 'therubyracer'
 
